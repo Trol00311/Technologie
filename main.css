@@ -1,105 +1,135 @@
 /*Zdjecia*/
 #services {
-    display: flex;
-    flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#services > div {
-     position: relative;
-     width: 25%;
-     overflow: hidden;
-
+#services>div {
+  position: relative;
+  width: 25%;
+  overflow: hidden;
 }
 
 #services div img {
-    width: 100%;
-    transition: width .4s;
+  width: 100%;
+  transition: width 0.4s;
 }
 
 #services div:hover .bg {
-    opacity: 1;
+  opacity: 1;
 }
- 
+
 #services div:hover img {
-    width: 110%;
- }
+  width: 110%;
+}
 
 #services .bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(0,0,0, .7);
-    opacity: 0;
-    transition: opacity;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity;
+}
+
+#services>div>div:hover {
+  background-image: url("./img/oko.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*Menu*/
-.nav
-{
-    width:100%;
-    background-color:black;
+.nav {
+  width: 100%;
+  background-color: black;
 }
+
 nav ul li {
-    color: black;
-    font-size: 18px;
-    transition: color .4s;
-    text-transform: uppercase;
-    text-align: right;
+  color: black;
+  font-size: 18px;
+  transition: color 0.4s;
+  text-transform: uppercase;
+  text-align: right;
 }
 
-nav ul li:hover {
-    color: rgb(16,201,195);
+
+body>section.header>nav>ul>li>a:hover {
+  color: rgb(16, 201, 195);
 }
 
-nav ul{
-    padding:0;
-    margin:0;
-    list-style-type:none;
-    height:35px;
-    line-height: 200%;
-    display:inline-block;
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  height: 35px;
+  line-height: 200%;
+  display: inline-block;
 }
 
-nav ul a{
-    display:block;
+nav ul a {
+  display: block;
 }
 
-nav ul > li{
-    float:left;
-    width:150px;
-    height:20px;
+body>section.header>nav>ul {
+  display: flex;
 }
+
+body>section.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+body>section.header>nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+body>section.header>nav>img {
+  height: 30px;
+}
+
+body>section.header>nav>ul>li>a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 
 /*Stopka*/
 #footer {
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-    #footer > div {
-        height: 150px;
-        display: flex;
-        position: relative;
-        width: 25%;
-        overflow: hidden;
-        background: rgb(0 0 0);
-        color: rgb(128 128 128);
-        justify-content: center;
-        align-items: center;
-    }
+
+#footer>div {
+  height: 150px;
+  display: flex;
+  position: relative;
+  width: 25%;
+  overflow: hidden;
+  background: rgb(0 0 0);
+  color: rgb(128 128 128);
+  justify-content: center;
+  align-items: center;
+}
+
 #footer div p {
-    white-space: nowrap;
-
+  white-space: nowrap;
 }
 
-#footer#footer ul{
-    list-style-type:none;
+#footer#footer ul {
+  list-style-type: none;
 }
+
 #footer#footer a {
-    text-decoration: none;
-    color:rgb(128 128 128);
+  text-decoration: none;
+  color: rgb(128 128 128);
 }
