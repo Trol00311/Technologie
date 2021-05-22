@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" type="text/css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Zaliczenie WT</title>
   </head>
   <body>
     <section class="header">
       <nav>
+        <div id="headerImg"></div>
         <img src="triangle.png" alt="" />
         <ul>
           <li><a href="#home">Home</a></li>
@@ -22,22 +24,75 @@
         </ul>
       </nav>
     </section>
-    <selection id="home"></selection>
-    <selection id="about"></selection>
-    <selection id="work"></selection>
-    <selection id="process"></selection>
-    <a name="products"></a>
+    
+      <section id="home">
+        <div id="homeText">
+          <h1 id="homeH1">We Develop and Design</h1>
+          <p id="homeText2">
+            We are a new design studio basen in USA. We have over 20 years of
+            combined experience, and know a thing or two about designing
+            websites and mobile apps.
+          </p>
+          <button id="homeBt"><a href="#contact">CONTACT US</a></button>
+        </div>
+      </section>
+
+      <section id="about">
+        <div id="aboutDiv">
+          <h1 id="aboutH1">About Us</h1>
+          <p id="aboutText">
+            Divide have don't wherein air fourth. Won itself make have night
+            won't make. A you under Speed appear which good give. Own Give air
+            without fowl moveth dry first heaven fruit dominion she'd won't very
+            all
+          </p>
+          <img src="img/signature.png" />
+        </div>
+      </section>
+    </section>
+
+    <section id="work">
+      <div id="workLeft">
+        <div id="workMid">
+          <h2>Professional Skills</h2>
+          <br />
+          <ul id="skill">
+            <li>
+              <span class="title">IO/UX DESIGN &nbsp; 63%</span>
+              
+              <span id="line workBox1"></span><span id="workLine1"></span
+              ><span id="workLineGrey"></span
+                >
+            </li>
+            <br>
+            <br>
+            <br>
+            <li>
+              <span class="title">WEB DEVELOPMEENT &nbsp; 70%</span>
+              <span id="line workBox2"></span><span id="workLine2"></span
+              ><span id="workLineGrey"></span
+                >
+            </li>
+            <br>
+            <br>
+            <br>
+            <li>
+              <span class="title">WEB DEVELOPMEENT &nbsp; 70%</span>
+              <span id="line workBox3"></span><span id="workLine3"></span
+              ><span id="workLineGrey"></span
+                >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="workRight">
+        <img src="img/laptop.jpg" />
+      </div>
+    </section>
+
     <section id="services">
       <div>
         <img src="./img/1.jpg" />
-        <div class="bg"></div>
-      </div>
-      <div>
-        <img src="./img/2.jpg" />
-        <div class="bg"></div>
-      </div>
-      <div>
-        <img src="./img/3.jpg" />
         <div class="bg"></div>
       </div>
       <div>
@@ -49,15 +104,7 @@
         <div class="bg"></div>
       </div>
       <div>
-        <img src="./img/6.jpg" />
-        <div class="bg"></div>
-      </div>
-      <div>
-        <img src="./img/7.jpg" />
-        <div class="bg"></div>
-      </div>
-      <div>
-        <img src="./img/8.jpg" />
+        <img src="./img/2.jpg" />
         <div class="bg"></div>
       </div>
       <div>
@@ -77,9 +124,21 @@
         <div class="bg"></div>
       </div>
     </section>
-    <selection id="testimonials"></selection>
-    <selection id="contact"></selection>
-    <selection id="footer">
+    <section id="process">
+      <h1 id="processH1">Our Work Proces</h1>
+      <p id="processText">
+        Was years it seasons was there from he in them together over that,<br> third
+        sixth gathered female creeping bearing behold years
+      </p>
+      <div id="video">
+        <video autoplay controls muted loop id="processVideo">
+          <source src="img/movie.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <section id="testimonials"></section>
+    <section id="contact"></section>
+    <section id="footer">
       <div id="footer1">
         <p>
           ⓒTomasz Szewczyk<br />
@@ -111,6 +170,6 @@
           <li><a href="#home">Twitter</a></li>
         </ul>
       </div>
-    </selection>
+    </section>
   </body>
 </html>

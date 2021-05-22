@@ -1,10 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/*home*/
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  background-image: url("./img/home1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#homeText {
+  float: right;
+  margin: 0 850px;
+  width: 850px;
+  margin-top: 150px;
+  padding-top: 150px;
+}
+#homeText {
+  margin-top: 200px;
+}
+#homeText {
+  margin: 0 auto;
+  padding-left: 400px;
+}
+
+#homeH1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-top: 30px;
+  padding-right: 10%;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+}
+
+#homeText2 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(124, 120, 121);
+  margin-top: 20px;
+  width: 450px;
+}
+
+#homeBt {
+  margin-top: 40px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: rgb(255, 255, 255);
+  border-color: rgb(16, 201, 195);
+  background-color: rgb(16, 201, 195);
+  border: none;
+}
+
+#homeBt > a {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+}
+
+/*About*/
+#about {
+  width: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#aboutDiv {
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#aboutH1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+}
+
+#aboutText {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(124, 120, 121);
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+#aboutDiv > img {
+  width: 200px;
+}
+
 /*Zdjecia*/
 #services {
   display: flex;
   flex-wrap: wrap;
 }
 
-#services>div {
+#services > div {
   position: relative;
   width: 25%;
   overflow: hidden;
@@ -32,18 +131,27 @@
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   transition: opacity;
-}
-
-#services>div>div:hover {
-  background-image: url("./img/oko.png");
-  background-position: center;
+  background-image: url("img/oko.png");
   background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: center;
 }
 
 /*Menu*/
 .nav {
   width: 100%;
   background-color: black;
+}
+body > section.header > nav {
+  position: absolute;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 nav ul li {
@@ -54,8 +162,7 @@ nav ul li {
   text-align: right;
 }
 
-
-body>section.header>nav>ul>li>a:hover {
+nav ul li:hover {
   color: rgb(16, 201, 195);
 }
 
@@ -72,33 +179,178 @@ nav ul a {
   display: block;
 }
 
-body>section.header>nav>ul {
+body > section.header > nav > ul {
   display: flex;
 }
 
-body>section.header {
+body > section.header {
   display: flex;
   justify-content: space-between;
 }
 
-body>section.header>nav {
+body > section.header > nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-body>section.header>nav>img {
+body > section.header > nav > img {
   height: 30px;
+  width: 30px;
 }
 
-body>section.header>nav>ul>li>a {
+body > section.header > nav > ul > li > a {
   text-decoration: none;
   color: black;
   margin-left: 10px;
   margin-right: 10px;
 }
 
+/*WORK*/
+#work {
+  height: 360px;
+  display: flex;
+}
 
+#workLeft {
+  background-color: rgb(232, 232, 234);
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#workMid {
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+#workRight {
+  background-color: rgb(232, 232, 234);
+  width: 50%;
+}
+
+#workRight > img {
+  height: 450px;
+  float: right;
+}
+
+#line {
+  height: 5px;
+  margin: 0px;
+  background: rgb(120, 120, 120);
+  position: absolute;
+}
+
+#workBox1 {
+  width: 25%;
+  animation: workBox1 2s ease-out;
+}
+
+#workBox2 {
+  width: 25%;
+  animation: workBox2 2s ease-out;
+}
+
+#workBox3 {
+  width: 25%;
+  animation: workBox3 2s ease-out;
+}
+
+#workLine1 {
+  width: 15%;
+  height: 5px;
+  position: absolute;
+  background: rgb(16, 201, 195);
+  z-index: 1000;
+}
+#workLineGrey {
+  width: 30%;
+  height: 5px;
+  position: absolute;
+  background: grey;
+}
+#skill > li {
+  display: flex;
+}
+#skill > li > span.title {
+  position: absolute;
+  margin-top: -30px;
+}
+#workMid > h2 {
+  position: absolute;
+  z-index: 1000;
+}
+#about {
+  padding: 40px;
+}
+#processText {
+  padding-bottom: 40px;
+}
+#aboutText {
+  width: 900px;
+}
+#aboutDiv {
+  width: 900px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#workLine2 {
+  width: 20%;
+  height: 5px;
+  position: absolute;
+  background: rgb(16, 201, 195);
+  z-index: 1000;
+}
+
+#workLine3 {
+  width: 5%;
+  height: 5px;
+  position: absolute;
+  background: rgb(16, 201, 195);
+  z-index: 1000;
+}
+
+#skill {
+  margin-top: 50px;
+}
+
+/*Process*/
+#process {
+  height: 600px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#processH1 {
+  margin-top: 100px;
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+
+#processText {
+  font-family: "Montserrat", sans-serif;
+}
+
+#processVideo {
+  width: 600px;
+}
+
+@media (max-width: 620px) {
+  #processVideo {
+    width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  #processVideo {
+    width: 310px;
+  }
+}
 
 /*Stopka*/
 #footer {
@@ -107,9 +359,11 @@ body>section.header>nav>ul>li>a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
 }
 
-#footer>div {
+#footer > div {
   height: 150px;
   display: flex;
   position: relative;
