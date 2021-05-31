@@ -22,9 +22,11 @@
   margin-top: 150px;
   padding-top: 150px;
 }
+
 #homeText {
   margin-top: 200px;
 }
+
 #homeText {
   margin: 0 auto;
   padding-left: 400px;
@@ -57,7 +59,7 @@
   border: none;
 }
 
-#homeBt > a {
+#homeBt>a {
   color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   letter-spacing: 3px;
@@ -93,7 +95,7 @@
   margin-top: 20px;
 }
 
-#aboutDiv > img {
+#aboutDiv>img {
   width: 200px;
 }
 
@@ -103,7 +105,7 @@
   flex-wrap: wrap;
 }
 
-#services > div {
+#services>div {
   position: relative;
   width: 25%;
   overflow: hidden;
@@ -137,12 +139,25 @@
   background-position: center;
 }
 
+#load {
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  padding: 30px;
+  color: rgb(131, 131, 131);
+  background-color: #dddddd;
+}
+
 /*Menu*/
 .nav {
   width: 100%;
   background-color: black;
 }
-body > section.header > nav {
+
+body>section.header>nav {
   position: absolute;
 }
 
@@ -179,27 +194,27 @@ nav ul a {
   display: block;
 }
 
-body > section.header > nav > ul {
+body>section.header>nav>ul {
   display: flex;
 }
 
-body > section.header {
+body>section.header {
   display: flex;
   justify-content: space-between;
 }
 
-body > section.header > nav {
+body>section.header>nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-body > section.header > nav > img {
+body>section.header>nav>img {
   height: 30px;
   width: 30px;
 }
 
-body > section.header > nav > ul > li > a {
+body>section.header>nav>ul>li>a {
   text-decoration: none;
   color: black;
   margin-left: 10px;
@@ -230,7 +245,7 @@ body > section.header > nav > ul > li > a {
   width: 50%;
 }
 
-#workRight > img {
+#workRight>img {
   height: 450px;
   float: right;
 }
@@ -264,32 +279,40 @@ body > section.header > nav > ul > li > a {
   background: rgb(16, 201, 195);
   z-index: 1000;
 }
+
 #workLineGrey {
   width: 30%;
   height: 5px;
   position: absolute;
   background: grey;
 }
-#skill > li {
+
+#skill>li {
   display: flex;
 }
-#skill > li > span.title {
+
+#skill>li>span.title {
   position: absolute;
   margin-top: -30px;
 }
-#workMid > h2 {
+
+#workMid>h2 {
   position: absolute;
   z-index: 1000;
 }
+
 #about {
   padding: 40px;
 }
+
 #processText {
   padding-bottom: 40px;
 }
+
 #aboutText {
   width: 900px;
 }
+
 #aboutDiv {
   width: 900px;
   justify-content: center;
@@ -352,6 +375,316 @@ body > section.header > nav > ul > li > a {
   }
 }
 
+/*mobile*/
+#mobile {
+  width: 100%;
+  height: 480px;
+  background-color: rgb(221, 221, 221);
+}
+
+#mobileAll {
+  display: flex;
+  height: 240px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(221, 221, 221);
+}
+
+#mobileAll2 {
+  display: flex;
+  height: 240px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(221, 221, 221);
+}
+
+#mobileAll>div {
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+#mobileAll2>div {
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+#mobile>div>div>p {
+  font-size: 15px;
+  color: rgb(120, 120, 120);
+}
+
+#mobile>div>div>i {
+  font-size: 30px;
+}
+
+#mobile>div>div>h2 {
+  font-size: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*time*/
+#time {
+  height: 240px;
+  background-color: rgb(16, 201, 195);
+}
+
+#time>div {
+  padding: 50px;
+  height: 100%;
+  display: flex;
+}
+
+#time>div>div {
+  width: 25%;
+}
+
+#timeFirst {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#timeSecond {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#timeThird {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#timeFourth {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#timeUnder {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  margin-left: 20px;
+}
+
+#timeUnder>p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#timeHead>i {
+  font-size: 50px;
+  color: white;
+}
+
+/*test*/
+#testimonials {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  height: 520px;
+  background-color: rgb(16, 201, 195);
+}
+
+#testimonials>div {
+  background-color: rgb(16, 201, 195);
+  ;
+}
+
+#testimonials>div>div>div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: 150px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#testAll {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 10px;
+  background: rgb(29, 33, 43);
+}
+
+#test {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+#testActive {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+#testInfo {
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
+}
+
+#testInfo>p {
+  color: white;
+  background: rgb(196, 98, 98);
+  font-size: 15px;
+  line-height: 1.5;
+  width: 60%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#testNavigation {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#testBtn {
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#testBtnActive {
+  background: rgb(38, 150, 233);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/*logo*/
+#logo {
+  height: 240px;
+}
+
+#logo>div {
+  display: flex;
+}
+
+#logo>div>div {
+  width: 25%;
+  height: 240px;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#logoAll>div:nth-child(1) {
+  background-image: url('img/logo1.png');
+  background-size: 30%;
+}
+
+#logoAll>div:nth-child(2) {
+  background-image: url('img/logo2.png');
+  background-size: 30%;
+}
+
+#logoAll>div:nth-child(3) {
+  background-image: url('img/logo3.png');
+  background-size: 30%;
+}
+
+#logoAll>div:nth-child(4) {
+  background-image: url('img/logo4.png');
+  background-size: 30%;
+}
+
+/*Contact*/
+#contact {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(221, 221, 221);
+}
+
+#contact>div>h1 {
+  text-align: center;
+}
+
+#contact>div>p {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contact>div>div>input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#contcact>div {
+  margin-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+
+#contact>div>div>div {
+  justify-content: center;
+  display: flex;
+}
+
+#contact>div>div>div>button {
+  margin-top: 40px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  border-color: rgb(16, 201, 195);
+  background-color: rgb(16, 201, 195);
+  box-shadow: none;
+  border: none;
+}
+
+#contact>div>div>div>button>p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+input::-webkit-input-placeholder {
+  float: left;
+}
+
+#contact>div>div>input[type=text]:nth-child(2) {
+  margin-left: 0px;
+
+}
+
+#contact>div>div>input[type=text]:nth-child(3) {
+  margin-left: 10px;
+}
+
+#contact>div>div>input[type=text]:nth-child(7) {
+  width: 100%;
+  height: 200px;
+}
+
 /*Stopka*/
 #footer {
   margin: auto;
@@ -363,7 +696,7 @@ body > section.header > nav > ul > li > a {
   font-size: 12px;
 }
 
-#footer > div {
+#footer>div {
   height: 150px;
   display: flex;
   position: relative;
