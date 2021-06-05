@@ -29,7 +29,13 @@
 
 #homeText {
   margin: 0 auto;
-  padding-left: 400px;
+  padding-left: 30%;
+}
+
+@media only screen and (max-width: 650px) {
+  #homeText {
+    padding-left: 0;
+  }
 }
 
 #homeH1 {
@@ -144,7 +150,7 @@
   height: 80px;
   justify-content: center;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   align-items: center;
   padding: 30px;
   color: rgb(131, 131, 131);
@@ -386,7 +392,7 @@ body>section.header>nav>ul>li>a {
   display: flex;
   height: 240px;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: rgb(221, 221, 221);
 }
 
@@ -394,7 +400,7 @@ body>section.header>nav>ul>li>a {
   display: flex;
   height: 240px;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: rgb(221, 221, 221);
 }
 
@@ -430,7 +436,6 @@ body>section.header>nav>ul>li>a {
   justify-content: center;
 }
 
-
 /*time*/
 #time {
   height: 240px;
@@ -451,33 +456,33 @@ body>section.header>nav>ul>li>a {
   font-size: 15px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 #timeSecond {
   font-size: 15px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 #timeThird {
   font-size: 15px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 #timeFourth {
   font-size: 15px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 #timeUnder {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   margin-left: 20px;
 }
@@ -504,7 +509,6 @@ body>section.header>nav>ul>li>a {
 
 #testimonials>div {
   background-color: rgb(16, 201, 195);
-  ;
 }
 
 #testimonials>div>div>div {
@@ -513,7 +517,7 @@ body>section.header>nav>ul>li>a {
   text-align: center;
   display: flex;
   margin-top: 150px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #testAll {
@@ -524,11 +528,16 @@ body>section.header>nav>ul>li>a {
   background: rgb(29, 33, 43);
 }
 
-#test {
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  clip-path: circle(0% at 0 50%);
+#test1 {
+  visibility: visible;
+}
+
+#test2 {
+  visibility: hidden;
+}
+
+#test3 {
+  visibility: hidden;
 }
 
 #testActive {
@@ -560,7 +569,7 @@ body>section.header>nav>ul>li>a {
   transform: translateX(-50%);
 }
 
-#testBtn {
+#testBtn1 {
   background: rgba(255, 255, 255, 0.5);
   width: 12px;
   height: 12px;
@@ -569,10 +578,24 @@ body>section.header>nav>ul>li>a {
   cursor: pointer;
 }
 
-#testBtnActive {
-  background: rgb(38, 150, 233);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+#testBtn2 {
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
 }
+
+#testBtn3 {
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 
 /*logo*/
 #logo {
@@ -592,22 +615,22 @@ body>section.header>nav>ul>li>a {
 }
 
 #logoAll>div:nth-child(1) {
-  background-image: url('img/logo1.png');
+  background-image: url("img/logo1.png");
   background-size: 30%;
 }
 
 #logoAll>div:nth-child(2) {
-  background-image: url('img/logo2.png');
+  background-image: url("img/logo2.png");
   background-size: 30%;
 }
 
 #logoAll>div:nth-child(3) {
-  background-image: url('img/logo3.png');
+  background-image: url("img/logo3.png");
   background-size: 30%;
 }
 
 #logoAll>div:nth-child(4) {
-  background-image: url('img/logo4.png');
+  background-image: url("img/logo4.png");
   background-size: 30%;
 }
 
@@ -630,7 +653,7 @@ body>section.header>nav>ul>li>a {
 
 #contact>div>p {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #contact>div>div>input {
@@ -643,7 +666,7 @@ body>section.header>nav>ul>li>a {
 
 #contcact>div {
   margin-top: 100px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
 
@@ -666,7 +689,7 @@ body>section.header>nav>ul>li>a {
 
 #contact>div>div>div>button>p {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -674,24 +697,24 @@ input::-webkit-input-placeholder {
   float: left;
 }
 
-#contact>div>div>input[type=text]:nth-child(2) {
+#contact>div>div>input[type="text"]:nth-child(2) {
   margin-left: 0px;
   margin-right: auto;
   margin-bottom: 10px;
 }
 
-#contact>div>div>input[type=text]:nth-child(3) {
+#contact>div>div>input[type="text"]:nth-child(3) {
   margin-left: 5px;
   margin-bottom: 10px;
 }
 
-#contact>div>div>input[type=text]:nth-child(5) {
+#contact>div>div>input[type="text"]:nth-child(5) {
   width: 100%;
   margin-bottom: 10px;
   margin-top: 0px;
 }
 
-#contact>div>div>input[type=text]:nth-child(7) {
+#contact>div>div>input[type="text"]:nth-child(7) {
   margin-top: 0px;
   width: 100%;
   height: 200px;
@@ -731,4 +754,13 @@ input::-webkit-input-placeholder {
 #footer#footer a {
   text-decoration: none;
   color: rgb(128 128 128);
+}
+
+#time {
+  position: relative;
+}
+
+body>section.header>nav>ul>li>a:hover {
+  color: orange;
+  transition: 0.25s ease-out;
 }
