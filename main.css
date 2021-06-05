@@ -117,6 +117,23 @@
   overflow: hidden;
 }
 
+@media only screen and (max-width: 700px) {
+  #services>div {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #services>div {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+
 #services div img {
   width: 100%;
   transition: width 0.4s;
@@ -290,7 +307,7 @@ body>section.header>nav>ul>li>a {
   width: 30%;
   height: 5px;
   position: absolute;
-  background: grey;
+  background: rgb(128, 128, 128);
 }
 
 #skill>li {
@@ -412,12 +429,53 @@ body>section.header>nav>ul>li>a {
   margin: auto;
 }
 
+@media only screen and (max-width: 700px) {
+  #mobileAll>div {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #mobileAll>div {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+
 #mobileAll2>div {
   width: 25%;
   justify-content: center;
   text-align: center;
   align-items: center;
   margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  #mobileAll2>div {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #mobileAll2>div {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
 }
 
 #mobile>div>div>p {
@@ -450,6 +508,20 @@ body>section.header>nav>ul>li>a {
 
 #time>div>div {
   width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  #timeAll {
+    width: 50%;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #timeAll {
+    width: 100%;
+    display: flex;
+  }
 }
 
 #timeFirst {
@@ -761,6 +833,6 @@ input::-webkit-input-placeholder {
 }
 
 body>section.header>nav>ul>li>a:hover {
-  color: orange;
+  color: rgb(16, 201, 195);
   transition: 0.25s ease-out;
 }
