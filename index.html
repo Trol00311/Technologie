@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="main.css" />
     <title>Zaliczenie WT</title>
   </head>
@@ -163,8 +163,10 @@
         <img src="./img/12.jpg" />
         <div class="bg"></div>
       </div>
+    
     </section>
     <a href=""><div id="load"><p>Load more</p></div></a>
+    
     <section id="process">
       <h1 id="processH1">Our Work Proces</h1>
       <p id="processText">
@@ -279,12 +281,12 @@
         if this could be the start of something beautiful</p>
         <div>
         <form action="#" method="post"></form>
-          <input type="text" name="ContactName" placeholder="Your name">
-          <input type="text" name="ContactEmail" placeholder="Your email"><br>
-          <input type="text" name="contactTitle" placeholder="Your Title"><br>
-          <input type="text" name="contactMessage" placeholder="Your message"><br>     
+          <input type="text" id="contactName" placeholder="Your name">
+          <input type="text" id="contactEmail" placeholder="Your email"><br>
+          <input type="text" id="contactTitle" placeholder="Your Title"><br>
+          <input type="text" id="contactMessage" placeholder="Your message"><br>     
       </form>
-      <div><button id="ContactBtn"><p>SEND MESSAGE</p></button></div>
+      <div><button id="contactBtn" onclick="text()"><p>SEND MESSAGE</p></button></div>
 
 
 
